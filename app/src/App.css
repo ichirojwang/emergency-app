@@ -1,0 +1,174 @@
+/* Global Reset to Avoid Unintended Overflow */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* General List Container */
+#emergency-list {
+  overflow-y: auto;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background: #f9f9f9;
+  border-left: 1px solid #ccc;
+  padding: 10px;
+  height: 100%;
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+}
+
+/* Header for List Section */
+#emergency-list h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Add Report Button */
+#emergency-list .add-report-button {
+  display: block;
+  margin-bottom: 10px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#emergency-list .add-report-button:hover {
+  background: #2a2a2a;
+}
+
+/* Sorting Buttons */
+#emergency-list .sort-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Handle wrapping if the container is too narrow */
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+#emergency-list .sort-buttons button {
+  color: black;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#emergency-list .sort-buttons button:hover {
+  background: #f0f0f0;
+}
+
+/* Emergency List Items */
+#emergency-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#emergency-list ul li {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 100%; /* Prevent item overflow */
+}
+
+#emergency-list ul li b {
+  color: #555;
+  font-weight: bold;
+}
+
+#emergency-list ul li img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+#emergency-list ul li:hover {
+  border-color: #aaa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.button-delete {
+  background-color: indianred;
+  margin-right: 10px;
+}
+
+/* MODAL STUFF FROM HERE AND BELOW */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 8px;
+  overflow: hidden; /* prevent overflow */
+}
+
+.create-report-modal {
+  width: 500px;
+  height: 850px;
+  padding: 20px;
+}
+
+.passcode-modal {
+  width: auto;
+  max-width: 90%;
+  min-width: 300px;
+  height: auto;
+  padding: 20px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 100%;
+  overflow-y: auto; /* for scrolling content */
+}
+
+.modal-content label {
+  font-weight: bold;
+}
+
+.modal-content input,
+.modal-content textarea {
+  padding: 5px;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  min-height: 20px;
+}

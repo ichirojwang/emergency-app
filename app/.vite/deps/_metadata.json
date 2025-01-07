@@ -1,0 +1,46 @@
+{
+  "hash": "aa5b64d6",
+  "configHash": "1073d21c",
+  "lockfileHash": "c3b64bc8",
+  "browserHash": "6e6174d1",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "8f562590",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "f5e76324",
+      "needsInterop": true
+    },
+    "react-leaflet": {
+      "src": "../../node_modules/react-leaflet/lib/index.js",
+      "file": "react-leaflet.js",
+      "fileHash": "bce272a3",
+      "needsInterop": false
+    },
+    "leaflet": {
+      "src": "../../node_modules/leaflet/dist/leaflet-src.js",
+      "file": "leaflet.js",
+      "fileHash": "a6e66b93",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-H2E4SV6V": {
+      "file": "chunk-H2E4SV6V.js"
+    },
+    "chunk-WNPTCGAH": {
+      "file": "chunk-WNPTCGAH.js"
+    },
+    "chunk-6IC2OI6R": {
+      "file": "chunk-6IC2OI6R.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}

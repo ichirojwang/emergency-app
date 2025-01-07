@@ -1,13 +1,7 @@
-# CMPT272-Group-Project
+# Emergency Report System
 
-```
-cd app
-```
+### Emergency reporting:
+- Create and submit report to the map
+- Modify or delete reports
+  - Feature protected by MD5 hashed password
 
-```
-npm install
-```
-
-```
-npm run dev
-```
